@@ -1,0 +1,27 @@
+{% extends "candidates_scores/base.html" %}
+{% block content %}
+<div class="container">
+  <h2>Candidates Table</h2>
+  <table class="table">
+    <thead>
+        <tr>
+          <th>Reference</th>
+          <th>Name</th>
+          <th>Scores </th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for candidate in candidates %}
+       <tr>
+        <td>{{candidate.candidate_ref}} </td>
+        <td> {{candidate.name}} </td> 
+          {% for score in candidate.scores %}       
+             <td> {{ score.score }}</td>
+          {% endfor %}
+      </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+</div>
+    
+{% endblock content %}
