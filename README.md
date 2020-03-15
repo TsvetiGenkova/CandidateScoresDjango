@@ -1,2 +1,2 @@
 # CandidateScoresDjango
-Simple django app that dislays a list of candidates and all their scores.
+Simple django app that displays a list of candidates and all their scores.
