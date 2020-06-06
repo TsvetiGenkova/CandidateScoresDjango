@@ -1,5 +1,5 @@
 asgiref==3.2.5
-Django==3.0.4
+Django==3.0.7
 numpy==1.18.1
 pandas==1.0.1
 pandas-schema==0.3.5
